@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon" href="{{ asset("img/favicon.png") }}"/>
+
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+
+
+        <a href="{{ path('app_home') }}"><img src="{{ asset('img/logo.png') }}" alt=""></a>
+        <h1>Bucket List</h1>
+
+    </div>
+    <ul>
+        <li><a href="{{ path('app_home') }}">Home</a></li>
+        <li><a href="{{ path('app_layout') }}">Layout</a></li>
+        <li><a href="{{ path('app_list') }}">List</a></li>
+        <li><a href="{{ path('app_aboutUs') }}">About Us</a></li>
+    </ul>
+</header>
+<main>
+{% block body %}
+
+
+
+
+{% endblock %}
+</main>
+<footer><p>{{ "now"|date("Y") }} © Antonin </p>
+    <button id="switch">Dark Mode</button></footer>
+<script src="{{ asset('js/script.js') }}"></script>
+</body>
+
+</html>

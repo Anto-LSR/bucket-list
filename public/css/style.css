@@ -1,0 +1,76 @@
+:root{
+
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: 300ms all ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-logo {
+    display: flex;
+    gap: 15px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+header ul a {
+    color: black;
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+header ul a:hover {
+    color: #f15f5f;
+}
+
+main {
+    min-height: 80vh;
+}
+
+footer {
+    text-align: center;
+    font-weight: 700;
+}
+
+.bidouille {
+    color: red;
+    text-align: center;
+}
+
+.dark {
+    color: white;
+
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-dark {
+    background: black;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: #262626;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid white;
+}
